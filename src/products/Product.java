@@ -10,6 +10,8 @@ public abstract class Product {
         return id + "-" + title + ": " + price;
     }
 
+    protected abstract String generateId();
+
     public void setTitle(String title) {
         this.title = title;
     }
