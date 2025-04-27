@@ -6,6 +6,10 @@ public abstract class Product {
     private double price;
     private String id;
 
+    public String toString(){
+        return id + "-" + title + ": " + price;
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
