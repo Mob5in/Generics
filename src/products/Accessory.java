@@ -12,4 +12,13 @@ public class Accessory extends Product{
     protected String generateId() {
         return "";
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
 }
