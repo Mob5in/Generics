@@ -22,6 +22,11 @@ public class Notebook extends Product{
     }
 
     @Override
+    public String toString() {
+        return super.toString() + ", Page Count: " + pageCount + ", Hard Cover: " + isHardCover;
+    }
+
+    @Override
     protected String generateId() {
         return "";
     }
