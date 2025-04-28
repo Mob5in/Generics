@@ -21,4 +21,10 @@ public class Accessory extends Product{
         this.color = color;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "_ Color: " + color;
+    }
+
+
 }
