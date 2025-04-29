@@ -6,13 +6,16 @@ public class Book extends Product{
     private String author;
     private String publication;
     private String genre;
+    private static int counter = 0;
 
     public Book(String title, Double price, String author, String publication, String genre) {
         super(title, price);
         this.author = author;
         this.publication = publication;
         this.genre = genre;
+        counter ++;
     }
+
 
 
     @Override
@@ -22,6 +25,7 @@ public class Book extends Product{
 
     @Override
     protected String generateId() {
-        return "";
+        int count = counter;
+        return "1" + String.format("%03d", count);
     }
 }
