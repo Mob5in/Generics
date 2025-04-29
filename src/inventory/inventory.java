@@ -27,7 +27,14 @@ public class inventory <T extends Product>{
     }
 
     public T findItemById(int id){
-
+        for(T item: this.items){
+            String ID = String.valueOf(id);
+            if (item.getId().equals(ID)) {
+                return item;
+            }
+        }
+        System.out.println("Product do not exist");
+        return null;
     }
 
     public void displayAll(){
