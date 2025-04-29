@@ -5,9 +5,10 @@ public class Accessory extends Product{
     private static int counter = 0;
     private String color;
 
-    public Accessory(String title, Double price) {
+    public Accessory(String title, Double price, String color) {
         super(title, price);
         counter ++;
+        this.color = color;
         setId(generateId());
     }
 
