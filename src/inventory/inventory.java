@@ -22,7 +22,8 @@ public class inventory <T extends Product>{
     }
 
     public void removeItemById(int id){
-
+        String ID = String.valueOf(id);
+        this.items.removeIf(item ->(item.getId()).equals(ID));
     }
 
     public T findItemById(int id){
