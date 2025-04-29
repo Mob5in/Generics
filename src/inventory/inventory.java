@@ -18,7 +18,7 @@ public class inventory <T extends Product>{
     }
 
     public void addItem(T product){
-
+        this.items.add(product);
     }
 
     public void removeItemById(int id){
