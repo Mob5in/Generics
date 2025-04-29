@@ -12,6 +12,23 @@ public class inventory <T extends Product>{
         return items;
     }
 
+    public void applyDiscount(String productName, int discount){
 
+    }
 
+    public void addItem(T product){
+
+    }
+
+    public void removeItemById(int id){
+
+    }
+
+    public T findItemById(int id){
+
+    }
+
+    public void displayAll(){
+
+    }
 }
