@@ -43,5 +43,6 @@ public class inventory <T extends Product>{
     }
 
     public void displayAll(){
+
     }
 }
