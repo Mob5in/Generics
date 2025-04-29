@@ -42,7 +42,10 @@ public class inventory <T extends Product>{
         return null;
     }
 
-    public void displayAll(){
-
+    public void displayAll() {
+        for (T item : items) {
+            System.out.println(item);
+        }
     }
+
 }
