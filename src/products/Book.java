@@ -14,6 +14,7 @@ public class Book extends Product{
         this.publication = publication;
         this.genre = genre;
         counter ++;
+        setId(generateId());
     }
 
     public String getAuthor() {
