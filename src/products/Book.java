@@ -16,6 +16,25 @@ public class Book extends Product{
         counter ++;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getPublication() {
+        return publication;
+    }
+
+    public void setPublication(String publication) {
+        this.publication = publication;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
 
 
     @Override
