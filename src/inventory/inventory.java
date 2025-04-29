@@ -14,7 +14,12 @@ public class inventory <T extends Product>{
     }
 
     public void applyDiscount(String productName, int discount){
-
+        for (T item : items) {
+            if (item.getTitle().equals(productName)) {
+                double newPrice = item.getPrice() - discount;
+                item.setPrice(newPrice);
+            }
+        }
     }
 
     public void addItem(T product){
@@ -38,6 +43,5 @@ public class inventory <T extends Product>{
     }
 
     public void displayAll(){
-
     }
 }
