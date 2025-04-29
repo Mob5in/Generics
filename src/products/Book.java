@@ -14,6 +14,8 @@ public class Book extends Product{
         this.genre = genre;
     }
 
+
+    @Override
     public String toString(){
         return super.toString() + ", Author: " + author + ", Publication: " + publication + ", Genre: " + genre;
     }
