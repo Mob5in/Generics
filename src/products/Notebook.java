@@ -11,6 +11,7 @@ public class Notebook extends Product{
         this.pageCount = pageCount;
         this.isHardCover = isHardCover;
         counter ++;
+        setId(generateId());
     }
 
 
